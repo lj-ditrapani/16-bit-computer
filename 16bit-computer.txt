@@ -1,0 +1,135 @@
+﻿---------|---------|---------|---------|---------|---------|---------|--
+
+General
+-------
+
+16-bit CPU
+64 KWords = 128 KB = 1 M-bit
+
+20 MHz
+10 Million instructions per second (min)
+
+Triple ported register file
+(2 reads, 1 write per clock)
+CPLD like Control
+10 function ALU (4 control bits)
+
+Reg (1 clock)
+Fetch instruction (memory read)       1 clock
+Decode & Reg read & ALU & Reg write
+
+STR (2 clocks)
+Fetch instruction (memory read)       1 clock
+Decode & Reg read
+Memory write                          1 clock
+
+LOD (2 clocks)
+Fetch instruction (memory read)       1 clock
+Decode & Reg read
+Memory read & reg write               1 clock
+
+
+Video
+------------
+
+Video Ram
+Color are 16-bit
+32 tile colors    32    Words
+32 sprite colors  32    words
+Single tile        8    Words   8 X 8 tile times 2 bits
+                                (16 bits per word)
+Tile index      2048    Words   256 tiles X 8 words
+Each tile cell     1    Word    8 bit tile select +
+        4 bit foreground color pair + 4 bit background color pair
+Number of cells 2400    60 X 40
+cell x y flip    300    Words   2 bit X 2,400 / 16
+Sprites          256    attribute data for 128 sprites
+
+                words
+---------------------
+Tile index      2,048
+Grid cells      2,400
+Cell x y flip     300
+Sprites           256
+Tile colors        32
+Sprite colors      32
+---------------------
+Total           5,068
+
+16 x 2 x 16-bit colors
+(16 pairs of 16-bit colors)
+4 bit color pair index
+8x8 pixel tiles
+256 tile index
+60 x 40 chars/tiles
+480 x 320 pixel screen
+video RAM
+5,068 Words (< 10 KB)
+
+Sprites
+128 sprites
+2 words per sprite
+256 words
+Sprite data
+position    color pairs    Mirrors    Tile  |  Total
+x    y      1    2         x   y            |
+6    6      4    4         1   1      8     |  30
+30 bits < 2 words
+
+Video hardware
+--------------
+Instead of doing copy over to video RAM, could use double buffer
+So just swap buffers instead of doing copy; instantaneous!
+Could do the same for all I/O.
+
+First 90 ms of frame:  CPU controls RAM lines
+Next 10 ms of frame:  CPU sleeps
+    video chip controls RAM Address and data out lines
+Video copies video RAM into local video ram (4,480 words)
+Control returned to CPU
+Video ram draws info to screen in continuous loop for next 90 ms
+
+Video loop 1 (7 operations)
+------------
+1) Use row/col counters to load tile cell
+2) Use tile slot color pair IDs to load 4 colors from color pairs
+3) Use row/col counters and tile ID to load tile row
+4) increment row/col counters as necessary
+5) Switch buffers and goto 1)
+
+Video loop 2 (8 operations)
+------------
+1) Draw 8 pixel row to screen (16-bit row)
+2) Switch buffers Goto 1)
+
+153 k cycles to complete
+160 k * 6 = 960 k cycles
+1.8 million cycles available
+
+
+I/O
+-----------
+
+I/O
+10 Million instructions per second
+ 1 Million instructions per frame
+   100 K instructions for I/O per frame
+    10 K I/O operations per frame
+       4,480 video output
+       500 sound (20 changes of 20 registers)
+       5K Network/HDD access (1K each read, 1K each write?)
+       10 operation for keyboard input (10 key down, 10 key up)
+                1 byte per action: first bit up or down,
+                                   next seven = key code
+                Saves up to 20 actions, anymore are dumped
+
+
+Words
+  512 Sound out   
+   10 Keyboard input (20 actions per frame/200 actions per second)
+2,048 Network I/O (1K read, 1K write)
+2,048 HDD or SD card I/O (1K read, 1K write)
+5,068 Video out
+    1 Frame interrupt enable (or 16 I/O control flags?)
+    1 Frame interrupt vector
+    6 Debug I/O streams
