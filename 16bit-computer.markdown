@@ -3,35 +3,36 @@
 General
 -------
 
-16-bit CPU
-64 KWords = 128 KB = 1 M-bit
+- 16-bit CPU
+- 64 KWords = 128 KB = 1 M-bit
 
-20 MHz
-10 Million instructions per second (min)
+- 20 MHz
+- 10 Million instructions per second (min)
 
-Triple ported register file
-(2 reads, 1 write per clock)
-CPLD like Control
-10 function ALU (4 control bits)
+    Triple ported register file
+    (2 reads, 1 write per clock)
+    CPLD like Control
+    10 function ALU (4 control bits)
 
-Reg (1 clock)
-Fetch instruction (memory read)       1 clock
-Decode & Reg read & ALU & Reg write
+    Reg (1 clock)
+    Fetch instruction (memory read)       1 clock
+    Decode & Reg read & ALU & Reg write
 
-STR (2 clocks)
-Fetch instruction (memory read)       1 clock
-Decode & Reg read
-Memory write                          1 clock
+    STR (2 clocks)
+    Fetch instruction (memory read)       1 clock
+    Decode & Reg read
+    Memory write                          1 clock
 
-LOD (2 clocks)
-Fetch instruction (memory read)       1 clock
-Decode & Reg read
-Memory read & reg write               1 clock
+    LOD (2 clocks)
+    Fetch instruction (memory read)       1 clock
+    Decode & Reg read
+    Memory read & reg write               1 clock
 
 
 Video
 ------------
 
+```
 Video Ram
 Color are 16-bit
 32 tile colors    32    Words
@@ -75,9 +76,12 @@ position    color pairs    Mirrors    Tile  |  Total
 x    y      1    2         x   y            |
 6    6      4    4         1   1      8     |  30
 30 bits < 2 words
+```
+
 
 Video hardware
 --------------
+```
 Instead of doing copy over to video RAM, could use double buffer
 So just swap buffers instead of doing copy; instantaneous!
 Could do the same for all I/O.
@@ -105,11 +109,13 @@ Video loop 2 (8 operations)
 153 k cycles to complete
 160 k * 6 = 960 k cycles
 1.8 million cycles available
+```
 
 
 I/O
 -----------
 
+```
 I/O
 10 Million instructions per second
  1 Million instructions per frame
@@ -133,3 +139,4 @@ Words
     1 Frame interrupt enable (or 16 I/O control flags?)
     1 Frame interrupt vector
     6 Debug I/O streams
+```
