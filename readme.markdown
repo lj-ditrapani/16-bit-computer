@@ -29,6 +29,7 @@ Components
 - CPU:  <https://github.com/lj-ditrapani/cpu16bit>
 - Video:
 - Keyboard:
+- Audio
 - Networking:
 - Storage:
 
