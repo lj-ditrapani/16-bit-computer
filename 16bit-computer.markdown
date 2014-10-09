@@ -8,7 +8,7 @@ General
 - 20 MHz
 - 10 Million instructions per second (min)
 
-
+```
     Triple ported register file
     (2 reads, 1 write per clock)
     CPLD like Control
@@ -27,6 +27,7 @@ General
     Fetch instruction (memory read)       1 clock
     Decode & Reg read
     Memory read & reg write               1 clock
+```
 
 
 Video
