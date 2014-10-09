@@ -32,7 +32,7 @@ Video
 ------------
 
 See
-**Video link goes here**
+<https://github.com/lj-ditrapani/16-bit-computer-video>
 for details on video sub-system
 
 

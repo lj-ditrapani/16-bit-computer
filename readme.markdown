@@ -26,8 +26,8 @@ Implementation
 Components
 ----------
 
-- CPU:  <https://github.com/lj-ditrapani/cpu16bit>
-- Video:
+- CPU:      <https://github.com/lj-ditrapani/16-bit-computer-cpu>
+- Video:    <https://github.com/lj-ditrapani/16-bit-computer-video>
 - Keyboard:
 - Audio
 - Networking:
@@ -37,4 +37,5 @@ Components
 Status
 ------
 
-The CPU is complete
+- The CPU is complete
+- Video is a WIP
