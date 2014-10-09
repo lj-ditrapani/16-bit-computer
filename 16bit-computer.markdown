@@ -4,7 +4,6 @@ General
 
 - 16-bit CPU
 - 64 KWords = 128 KB = 1 M-bit
-
 - 20 MHz
 - 10 Million instructions per second (min)
 
