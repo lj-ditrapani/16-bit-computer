@@ -15,7 +15,7 @@ Numbered 0-63
 57     Storage    Input     58,368-59,391   $E400-$E7FF
 58     Storage    Output    59,392-60,415   $E800-$EBFF
 59-60  Tile Index Output    60,416-62,463   $EC00-$F3FF
-61-63  video      Output    62,464-65,484   $F400-$FFCC
+61-63  video      Output    62,464-65,483   $F400-$FFCB
 
 63 (2 word)
 Frame interrupt 
