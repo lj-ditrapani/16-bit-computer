@@ -1,0 +1,4 @@
+loop = ->
+    setTimeOut(100 ms)
+    video.update()
+    runUpToTwoMillionCycles()
