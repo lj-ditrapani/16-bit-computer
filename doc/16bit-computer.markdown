@@ -29,14 +29,6 @@ General
 ```
 
 
-Video
-------------
-
-See
-<https://github.com/lj-ditrapani/16-bit-computer-video>
-for details on video sub-system
-
-
 I/O
 -----------
 
