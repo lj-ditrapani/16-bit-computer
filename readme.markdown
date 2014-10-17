@@ -12,7 +12,7 @@ with the following:
 - NES-style audio output
 
 Details on the design can be found in the
-[16bit-computer.markdown](https://github.com/lj-ditrapani/16-bit-computer/blob/master/16bit-computer.markdown)
+[16bit-computer.markdown](https://github.com/lj-ditrapani/16-bit-computer/blob/master/doc/16bit-computer.markdown)
 file
 
 
