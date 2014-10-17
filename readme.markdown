@@ -28,10 +28,10 @@ Components
 
 - CPU:      <https://github.com/lj-ditrapani/16-bit-computer-cpu>
 - Video:    <https://github.com/lj-ditrapani/16-bit-computer-video>
-- Keyboard:
-- Audio
-- Networking:
-- Storage:
+- Keyboard: <https://github.com/lj-ditrapani/16-bit-computer-keyboard>
+- Storage:  <https://github.com/lj-ditrapani/16-bit-computer-storage>
+- Networking: <https://github.com/lj-ditrapani/16-bit-computer-network>
+- Audio:  Not yet even in design phase...
 
 
 Status
@@ -39,4 +39,4 @@ Status
 
 - The CPU is complete
 - Video is tested and working
-- See [to-do list]()
+- See [to-do list](https://github.com/lj-ditrapani/16-bit-computer/blob/master/doc/todo.markdown) for rough timeline
