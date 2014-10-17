@@ -50,7 +50,7 @@ See [IO Map](https://github.com/lj-ditrapani/16-bit-computer/blob/master/doc/IOm
   1 Million instructions per frame
     100 K instructions for I/O per frame
       10 K I/O operations per frame
-         2K Network/HDD input (read)
+         2K Network/Storage input (read)
           1 keyboard input
 
 
