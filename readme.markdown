@@ -7,9 +7,9 @@ with the following:
 - 64K memory address
 - Color display
 - Keyboard input
-- NES-style audio output
-- Primitive Networking
 - Storage
+- Primitive Networking
+- NES-style audio output
 
 Details on the design can be found in the
 [16bit-computer.markdown](https://github.com/lj-ditrapani/16-bit-computer/blob/master/16bit-computer.markdown)
@@ -20,7 +20,7 @@ Implementation
 --------------
 - Written in CoffeeScript
 - Runs within a web-browser
-- Ruby Sinatra back-end
+- Ruby Sinatra back-end (planned)
 
 
 Components
@@ -38,4 +38,5 @@ Status
 ------
 
 - The CPU is complete
-- Video is a WIP
+- Video is tested and working
+- See [to-do list]()
