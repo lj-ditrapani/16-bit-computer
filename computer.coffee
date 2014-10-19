@@ -23,6 +23,7 @@ button.onclick = () ->
 button = ljd.$('resetComputerButton')
 button.onclick = () ->
   cpu.reset()
+  video.ram = newRam()
   video.update()
 
 e = ljd.$("test")
@@ -59,6 +60,8 @@ getRAM_fromFile = (fileName) ->
       ram
 
   oReq.send(null)
+
+newRam = -> (0 for _ in [0...Math.pow(2, 16)])
 
 getRAM_fromFile('program.exe')
 
