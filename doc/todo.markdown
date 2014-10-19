@@ -20,6 +20,8 @@ Complete working web LJD 16-bit computer
     - Step program (if loaded but not already running)
     - Reset computer (clears ram/registers/PC)
 - Keyboard input
+- remove debug I/O from CPU
+- Change video color format from 16-bit 5:6:5 to 15-bit 5:5:5
 
 
 Near term
