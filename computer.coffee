@@ -23,7 +23,7 @@ button.onclick = () ->
 button = ljd.$('resetComputerButton')
 button.onclick = () ->
   cpu.reset()
-  video.ram = newRam()
+  video.ram = cpu.ram
   video.update()
 
 e = ljd.$("test")
