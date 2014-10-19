@@ -1,5 +1,6 @@
 Complete working web LJD 16-bit computer
 ----------------------------------------
+- Create basic assembler
 - Create simplified acceptance testing set-up for whole computer
     - Load Binary RAM files from a directory into CPU RAM
     - Run program
@@ -13,14 +14,13 @@ Complete working web LJD 16-bit computer
         - For testing, load binary files before tests are defined?
 - Computer main loop
     - Frame interrupt vector
-    - Shutdown in frame interrupt disabled AND halted (END)
+    - Shutdown if frame interrupt disabled AND halted (END)
 - HTML/CSS/JS GUI interface
     - Load program from web server
     - Run program
     - Step program (if loaded but not already running)
     - Reset computer (clears ram/registers/PC)
 - Keyboard input
-- remove debug I/O from CPU
 
 
 Near term
