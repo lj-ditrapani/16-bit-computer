@@ -3,7 +3,7 @@ length = 2 ** 16
 # Default value
 a = Array.new(length) { 0x0407 }
 # Big endian
-s = a.pack("S>#{length}")
+s = a.pack("S>*")
 File.open('program.exe', 'wb') do |f|
   f.write s
 end
