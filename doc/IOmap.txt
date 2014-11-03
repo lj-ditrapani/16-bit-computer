@@ -8,7 +8,7 @@ Numbered 0-63
 0-53 are RAM
 54-63 are I/O
 
-54     Sound      Output    55,296-55,807   $D800-$D9FF
+54     Audio      Output    55,296-55,807   $D800-$D9FF
 55     Network    Input     56,320-57,343   $DC00-$DFFF
 56     Network    Output    57,344-58,367   $E000-$E3FF
 57     Storage    Input     58,368-59,391   $E400-$E7FF
@@ -19,7 +19,7 @@ Numbered 0-63
 63
 $FFFA   Keyboard input (7 bits) (read only)
 $FFFB   Network status (read only)
-$FFFC   Enable bits: sound, netOutput, storage read, storage write, fi
+$FFFC   Enable bits: audio, netOutput, storage read, storage write, fi
 $FFFD   Storage Read address (7 bits, but reserve 16 for future expansio
 $FFFE   Storage Write address (7 bits, but reserve 16 for future expansi
 $FFFF   Frame interrupt vector
@@ -41,7 +41,7 @@ Enable bits
 $FFFC contains the enable bits
 
 bit
-4 Sound output enable         (S)
+4 Audio output enable         (S)
 3 Network output/write enable (N)
 2 Storage input/read enable   (R)
 1 Storage output/write enable (W)

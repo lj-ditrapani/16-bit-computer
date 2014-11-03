@@ -47,7 +47,7 @@ See [IO Map](https://github.com/lj-ditrapani/16-bit-computer/blob/master/doc/IOm
 
 
 Words
-  512 Sound out
+  512 Audio out
 2,048 Network I/O (1K read, 1K write)
 2,048 Storage I/O (1K read, 1K write)
 5,068 Video out

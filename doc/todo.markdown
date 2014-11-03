@@ -1,5 +1,6 @@
 Complete working web LJD 16-bit computer
 ----------------------------------------
+- Change sound to audio in all files
 - Create basic assembler
 - Create simplified acceptance testing set-up for whole computer
     - Load Binary RAM files from a directory into CPU RAM
@@ -53,4 +54,4 @@ Future
     - Grid editor (+ xy flip)
     - Sprite editor
 - Audio
-- Sound editor
+- Audio editor
