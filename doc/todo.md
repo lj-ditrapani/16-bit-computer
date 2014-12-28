@@ -9,7 +9,6 @@ Complete working web LJD 16-bit computer
 ```
 
 - Change sound to audio in all files
-- Create basic assembler
 - Create simplified acceptance testing set-up for whole computer
     - Load Binary RAM files from a directory into CPU RAM
     - Run program
@@ -45,15 +44,6 @@ Ruby Sinatra web-app that allows
 
 Future
 ------
-- Assembler
-    - include labels, variables, reserve addresses,
-      & set data values in RAM
-    - Assembler directives
-    - pseudo instructions (load word)
-    - Pre-labeled addresses (video, keyboard, sprites, etc)
-    - include ability to copy chunks of binary data into specific RAM
-      locations.  For example, copy tile set into video tile set
-      address.
 - Storage
 - Networking
 - Video editor
