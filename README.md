@@ -39,4 +39,5 @@ Status
 
 - The CPU is complete
 - Video is tested and working
+- The assembler is complete
 - See [to-do list](https://github.com/lj-ditrapani/16-bit-computer/blob/master/doc/todo.markdown) for rough timeline
