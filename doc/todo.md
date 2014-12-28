@@ -2,9 +2,11 @@ Complete working web LJD 16-bit computer
 ----------------------------------------
 - Swap tile index and color pairs bytes for grid cells and sprites
 
+```
     --------------------------------
     |  cp1  |  cp2  |  tile index  |
     --------------------------------
+```
 
 - Change sound to audio in all files
 - Create basic assembler
