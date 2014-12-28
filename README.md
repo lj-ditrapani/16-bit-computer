@@ -34,6 +34,12 @@ Components
 - Audio:  Not yet even in design phase...
 
 
+Software
+--------
+
+Assembler <https://github.com/lj-ditrapani/16-bit-computer-assembler>
+
+
 Status
 ------
 
