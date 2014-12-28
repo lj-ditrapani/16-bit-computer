@@ -12,7 +12,7 @@ with the following:
 - NES-style audio output
 
 Details on the design can be found in the
-[16bit-computer.markdown](https://github.com/lj-ditrapani/16-bit-computer/blob/master/doc/16bit-computer.markdown)
+[16bit-computer.markdown](https://github.com/lj-ditrapani/16-bit-computer/blob/master/doc/16bit-computer.md)
 file
 
 
@@ -46,4 +46,4 @@ Status
 - The CPU is complete
 - Video is tested and working
 - The assembler is complete
-- See [to-do list](https://github.com/lj-ditrapani/16-bit-computer/blob/master/doc/todo.markdown) for rough timeline
+- See [to-do list](https://github.com/lj-ditrapani/16-bit-computer/blob/master/doc/todo.md) for rough timeline
