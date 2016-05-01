@@ -2,6 +2,8 @@
 The ljd 16-bit computer
 =======================
 
+Incomplete, abandoned.  See <https://github.com/lj-ditrapani/16-bit-computer-specification> for current direction.
+
 A complete 16-bit computer
 with the following:
 - 64K memory address
